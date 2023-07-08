@@ -57,3 +57,7 @@ Screenshots include 1) Homepage 2) Search Bar 3) Reading page 4) Section page
 **Responsiveness:** Improve the responsiveness of the website to ensure a seamless experience across different devices.
 **Weather API Integration:** Integrate the weather API to display weather news on the home page.
 **Logic Improvements:** Review and improve the logic of the codebase to enhance its efficiency and maintainability.
+
+
+### Disclaimer
+Please note that the logo used in this project is for educational purposes only. It was utilized as part of the learning process for web development and is not intended for commercial use. (India today logo)
