@@ -1,4 +1,4 @@
-![image](https://github.com/NINAD-17/News-WebApp/assets/94175390/1f811798-2f44-486f-9c46-562ea854b531)# News-WebApp
+# News-WebApp
 
 This is a news web application that provides the latest news to its users with a good user interface for reading. Users can read and search for news, as well as create an account to personalize their experience. The application is built using Express.js, MongoDB, and EJS. 
 
@@ -19,13 +19,9 @@ This is a news web application that provides the latest news to its users with a
 
 ## Screenshots
 <img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/bf8366e4-ea5a-4ee8-b2f6-dd9c089d0a1b" alt="Homepage of news Web application" width="300" height="200">
-*Homepage*
+*Homepage* | <img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/5f057fd8-5ce3-45a0-b6b1-674b04408fad" alt="Section of news Web application" width="300" height="200"> *Section page*
 
-<img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/5f057fd8-5ce3-45a0-b6b1-674b04408fad" alt="Section of news Web application" width="300" height="200"> *Section page*
-
-<img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/850d590c-d3ff-44cb-ad72-b866087e354b" alt="Search bar" width="300" height="200"> *Search Bar*
-
-<img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/dedabb95-fab9-4951-92a4-20f668d99b5f" alt="Reading page" width="300" height="200"> *Reading page*
+<img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/850d590c-d3ff-44cb-ad72-b866087e354b" alt="Search bar" width="300" height="200"> *Search Bar* | <img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/dedabb95-fab9-4951-92a4-20f668d99b5f" alt="Reading page" width="300" height="200"> *Reading page*
  
 ## Installation and Setup
 
