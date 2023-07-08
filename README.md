@@ -44,19 +44,19 @@ Screenshots include 1) Homepage 2) Search Bar 3) Reading page 4) Section page
 
 ## Known Issues & problems
 
-**Code Refactoring:** The codebase, particularly the CSS file, requires refactoring to improve organization and readability.
-**Login Functionality:** The current implementation of the login functionality is suboptimal and requires improvement.
-**Temporary Solution:** A temporary solution for the login issue was implemented by creating two different header files. This approach is not ideal and should be revisited.
-**Weather API Integration:** The integration of the weather API is incomplete. A section has been reserved on the home page for weather news, but the API has not yet been integrated.
+-**Code Refactoring:** The codebase, particularly the CSS file, requires refactoring to improve organization and readability.
+-**Login Functionality:** The current implementation of the login functionality is suboptimal and requires improvement.
+-**Temporary Solution:** A temporary solution for the login issue was implemented by creating two different header files. This approach is not ideal and should be -revisited.
+-**Weather API Integration:** The integration of the weather API is incomplete. A section has been reserved on the home page for weather news, but the API has not yet been integrated.
 
 
 ## Future Improvements:
-**Code Organization:** Refactor the codebase to improve its cleanliness and organization.
-**CSS Improvements:** Enhance the CSS to improve the overall design and user experience.
-**Light Mode:** Add a light mode option to the website for improved accessibility.
-**Responsiveness:** Improve the responsiveness of the website to ensure a seamless experience across different devices.
-**Weather API Integration:** Integrate the weather API to display weather news on the home page.
-**Logic Improvements:** Review and improve the logic of the codebase to enhance its efficiency and maintainability.
+-**Code Organization:** Refactor the codebase to improve its cleanliness and organization.
+-**CSS Improvements:** Enhance the CSS to improve the overall design and user experience.
+-**Light Mode:** Add a light mode option to the website for improved accessibility.
+-**Responsiveness:** Improve the responsiveness of the website to ensure a seamless experience across different devices.
+-**Weather API Integration:** Integrate the weather API to display weather news on the home page.
+-**Logic Improvements:** Review and improve the logic of the codebase to enhance its efficiency and maintainability.
 
 
 ## Disclaimer
