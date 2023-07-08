@@ -18,9 +18,9 @@ This is a news web application that provides the latest news to its users with a
 - **Axios**: A promise-based HTTP client for the browser and Node.js, supporting easy-to-use features for making HTTP requests.
 
 ## Screenshots
-![Homepage of Application](![Screenshot (104)](https://github.com/NINAD-17/News-WebApp/assets/94175390/4aeb514e-dc86-4694-b77a-f0f999b67e9c)
-) *HomePage
-
+<img src="![image](https://github.com/NINAD-17/News-WebApp/assets/94175390/bf8366e4-ea5a-4ee8-b2f6-dd9c089d0a1b)
+" alt="Homepage of news Web application" width="300" height="200">
+*Homepage*
 
 ## Installation and Setup
 
