@@ -19,9 +19,10 @@ This is a news web application that provides the latest news to its users with a
 
 ## Screenshots
 Screenshots include 1) Homepage 2) Search Bar 3) Reading page 4) Section page
+
 <img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/bf8366e4-ea5a-4ee8-b2f6-dd9c089d0a1b" alt="Homepage of news Web application" width="300" height="200"> <img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/5f057fd8-5ce3-45a0-b6b1-674b04408fad" alt="Section of news Web application" width="300" height="200">
 
-<img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/850d590c-d3ff-44cb-ad72-b866087e354b" alt="Search bar" width="300" height="200"> <img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/dedabb95-fab9-4951-92a4-20f668d99b5f" alt="Reading page" width="300" height="200"> *Reading page*
+<img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/850d590c-d3ff-44cb-ad72-b866087e354b" alt="Search bar" width="300" height="200"> <img src="https://github.com/NINAD-17/News-WebApp/assets/94175390/dedabb95-fab9-4951-92a4-20f668d99b5f" alt="Reading page" width="300" height="200">
  
 ## Installation and Setup
 
