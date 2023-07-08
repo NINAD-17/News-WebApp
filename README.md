@@ -23,8 +23,7 @@ This is a news web application that provides the latest news to its users with a
 
 ## Installation and Setup
 
-1. Clone this repository using the URL from the code button:
-    <img width="278" alt="image" src="https://github.com/NINAD-17/News-WebApp/assets/94175390/d404f3a5-f80b-44e3-95e7-fcc9e258d02a">
+1. Clone this repository using the URL from the code button: https://github.com/NINAD-17/News-WebApp.git
 
 2. Navigate to the local repository of this project and install all dependencies using the command `npm i`.
 
