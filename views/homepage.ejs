@@ -1,0 +1,101 @@
+<!-- hNo is a header number to change login as signed in or not. I know that it's not a good code -->
+<% if(hNo == 1) { %>
+    <%- include("partials/header1") -%>
+<% } else { %>
+    <%- include("partials/header2") -%>
+<% } %>
+
+<!-- Main News Section -->
+<main class="main-news-section container">
+    <section class="top-news-section container">
+        <h2 class="top-news-section-name"><a href="/top/categories/general/articles"> Top Stories </a><span class="read-more-txt">Read More >></span><span class="date"><%= today %></span></h2>
+        <section class="top-news-cont">
+            <% topNewsData.forEach((news, index) => { %>
+                    <% if(index == 0) { %>
+                            <div class="top-news">
+                                <% if(news.urlToImage == "" || news.urlToImage == undefined) { %>
+                                            <% news.urlToImage = "/images/ext.jpeg"; } %>
+                                <img src="<%= news.urlToImage %> " alt="">
+                                <div class="content">
+                                    <!-- <h2><a class="news-title-link" href="/articles/<%= news.title %>"><%= news.title %></a></h2> -->
+                                    <h2><a class="news-title-link" href="/general/articles/<%= index %>"><%= news.title %></a></h2>
+                                    <% if(news.description == "" || news.description == undefined) { %>
+                                            <% news.description = "Undefined"; } %>
+                                    <p class="news-description"><%= news.description %> </p>
+                                    <% if(news.source.name == "" || news.source.name == undefined) { %>
+                                            <% news.source.name = "Undefined"; } %>
+                                    <p class="author"><%= news.source.name %></p>
+                                    <% if(news.publishedAt == "" || news.publishedAt == undefined) { %>
+                                            <% news.publishedAt = "Not Known"; } %>
+                                    <% let dateAndTime = helper.splitTime(news.publishedAt) %>
+                                    <div class="dateAndTime">
+                                        <p class="date"><%= dateAndTime[0] %></p>
+                                        <p class="time date"><%= dateAndTime[1] %></p>
+                                    </div>
+                                </div>
+                            </div>
+                    <% } else { %>              
+                            <div class="top-news-blocks">
+                                <% if(news.source.name == "" || news.source.name == undefined) { %>
+                                        <% news.source.name = "Undefined"; } %>
+                                <p class="author"><%= news.source.name %></p>
+                                <!-- <h3><a class="news-title-link" href="/articles/<%= news.title %>"><%= news.title %></a></h3> -->
+                                <h3><a class="news-title-link" href="/general/articles/<%= index %>"><%= news.title %></a></h3>
+                                <% if(news.publishedAt == "" || news.publishedAt == undefined) { %>
+                                            <% news.publishedAt = "Not Known"; } %>
+                                <% let dateAndTime = helper.splitTime(news.publishedAt) %>
+                                <div class="dateAndTime">
+                                    <p class="date"><%= dateAndTime[0] %></p>
+                                    <p class="time date"><%= dateAndTime[1] %></p>
+                                </div>
+                            </div>
+                    <% } %>
+            <% }); %>
+        </section>
+    
+        <section class="side-cont">
+            
+        </section>
+    </section>
+
+    <section class="news-section container">
+        <h2>Explore</h2>
+        <section class="middle-news-section">
+            <%  newsSections.forEach((newsSection, index) => { %>
+                <% if(index == 0) { %>
+                    <% return; %>
+                <% } %>  
+                <div class="category-block">
+                <h2><a href="/categories/<%= sectionNames[index] %>/articles"><%= sectionNames[index] %></a><span>Read More News >></span></h2>
+                <% newsSection.forEach((news, i) => { %>
+                    <hr class="news-border">
+                    <div class="news-blocks">
+                        <div class="news-block-content">
+                            <% if(news.urlToImage == "" || news.urlToImage == undefined) { %>
+                                    <% news.urlToImage = "/images/ext.jpeg"; } %>
+                            <img src="<%= news.urlToImage %>" alt="">
+                            <div class="content">
+                                <% if(news.source.name == "" || news.source.name == undefined) { %>
+                                        <% news.source.name = "Unknown"; } %>
+                                <p class="author"><%= news.source.name %></p>
+                                <!-- <h2><a class="news-title-link" href="/articles/<%= news.title %>"><%= news.title %></a></h2> -->
+                                <h2><a class="news-title-link" href="/<%= sectionNames[index] %>/articles/<%= i %>"><%= news.title %></a></h2>
+                                <% if(news.publishedAt == "" || news.publishedAt == undefined) { %>
+                                        <% news.publishedAt = "Not Known"; } %>
+                                <% let dateAndTime = helper.splitTime(news.publishedAt) %>
+                                    <div class="dateAndTime">
+                                        <p class="date"><%= dateAndTime[0] %></p>
+                                        <p class="time date"><%= dateAndTime[1] %></p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+                </div>
+            <% }); %>
+        </section>
+    </section>
+</main>
+
+
+<%- include("partials/footer") -%>

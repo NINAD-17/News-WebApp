@@ -1,0 +1,22 @@
+<% if(hNo == 1) { %>
+    <%- include("partials/header1") -%>
+<% } else { %>
+    <%- include("partials/header2") -%>
+<% } %>
+
+<main class="main-news-section container">
+    <section class="news-reading-sec">
+        <% console.log(news) %>
+        <h1><a class="news-title-link"><%= news.title %></a></h1>
+        <% if(news.urlToImage == "" || news.urlToImage == undefined) { %>
+            <% news.urlToImage = "/images/ext.jpeg"; } %>
+        <img src="<%= news.urlToImage %>" alt="">
+        <div class="content">
+            <p class="author"><a href="<%= news.url %>"><%= news.source.name %></a></p>
+            <p class="date"><%= news.publishedAt %></p>
+            <p><%= news.content %> <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sint, autem, quae excepturi veniam aliquam ad nisi vitae provident molestias ipsam doloribus laudantium tempore dolore. Odio consectetur fugiat nostrum nobis explicabo modi laudantium reiciendis, molestiae enim reprehenderit sequi quo molestias sed alias nisi recusandae commodi perspiciatis et aperiam atque magnam fuga! Mollitia fugit corrupti praesentium. At facilis incidunt rem minima quia dolore adipisci, iste ex culpa nobis, ipsam quo atque eaque, aspernatur reiciendis unde ad suscipit nostrum nihil sequi. Doloribus tenetur dicta illum excepturi atque, ratione nesciunt aspernatur error laborum quae temporibus, sapiente, laboriosam id totam provident. Qui praesentium facilis numquam deleniti pariatur iure amet dicta necessitatibus, impedit, voluptate assumenda magnam veritatis porro. Eius deleniti error enim vero consectetur tenetur asperiores autem. Soluta commodi dicta rerum! Fugit error tempora totam ratione ut culpa aspernatur iure beatae, eveniet sint, quibusdam modi optio hic deserunt minus. Porro, illum accusamus error, numquam harum velit soluta reprehenderit beatae aut nesciunt earum maxime rem aspernatur repellendus ab. Eligendi cumque temporibus culpa in mollitia nesciunt, laborum aut voluptatum earum dolorum optio, labore, esse nostrum quia magnam rem sed non enim. Non obcaecati, veniam, nihil maxime, quod quo fuga id neque minima doloremque sequi accusantium veritatis ab alias itaque assumenda beatae error voluptate ex? Repellat nemo velit ut corrupti, vel laboriosam quos nisi. Aut quia natus, blanditiis dolores ab fuga? Possimus nobis praesentium excepturi alias voluptatum modi, quisquam enim deleniti ad iure odit dolor expedita, perferendis dolore cumque rerum assumenda quam aliquid ab similique explicabo dicta sint in. Nulla voluptas nemo veritatis culpa beatae expedita nisi illo enim eos vel maiores adipisci sunt, sapiente consectetur quo. Repudiandae id minus alias vel asperiores quia aperiam eveniet ad, adipisci explicabo? Consectetur nihil dicta temporibus nobis debitis quae inventore, quam rem aliquam ipsa eius minus laborum vitae expedita suscipit est.</p>
+        </div>
+    </section>
+</main>
+
+<%- include('partials/footer') -%>

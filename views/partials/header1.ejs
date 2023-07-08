@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1_Click News</title>
+
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/b2aebfe58c.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header Start --------------------------------------------------->
+    <!-- Header-->
+    <header id="header" class="">
+        <div class="header">
+
+            <!-- Left Cont -->
+            <div class="left-cont">
+                <img class="brand-logo" src="https://seeklogo.com/images/I/india-today-logo-0218513CB5-seeklogo.com.png" alt="">
+            </div>
+
+            <!-- Middle Cont -->
+            <div class="middle-cont">
+                <form class="main-search-bar-form" action="/" method="post">
+                    <input class="search-input" type="text" name="searchQuery" autocomplete="off">
+                    <button class="search-bar-btn" type="submit"><i class="fas fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+    
+            <!-- Right Cont -->
+            <div class="right-cont">
+                <form class="secondary-search-bar-form" action="/" method="post">
+                    <input type="text" class="search-input-second" name="searchQuery">
+                    <button type="submit" class="search-bar-btn"><i class="fas fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+                <!-- Icons -->
+                <span class="search-icon"><i class="header-icons fas fa-solid fa-magnifying-glass"></i></span>
+                <i class="header-icons fas fa-regular fa-circle-half-stroke"></i>
+                <i class="userBtn header-icons fas fa-solid fa-user"></i>
+
+                <!-- Dropdown -->
+                <div class="profile-options-dropdown">
+                    <div class="drop-down-content">
+                        <div class="user-profile">
+                            <img class="user-profile-img" src="/images/user-286.png" alt="">
+                            <p class="user-name"><%= userName %></p>
+                            <p class="view-profile-txt"><a href="">view profile</a></p>
+                            <hr>
+                        </div>
+                        <ul>
+                            <!-- <li><i class="fas fa-sharp fa-regular fa-arrow-pointer"></i>Dashboard</li> -->
+                            <li><i class="fas fa-regular fa-bookmark"></i>BookMarks</li>
+                            <li><i class="fas fa-regular fa-circle-half-stroke"></i>Theme</li>
+                        </ul>
+                    </div>
+                    <div class="log-out">
+                        <button class="log-out-btn"><a href="/logout"><i class="fas fa-regular fa-right-from-bracket"></i>log out</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!-- NavBar -->
+        <div class="nav-header">
+            <ul class="nav-list">
+                <li class="list-item active"><a class="" href="/">Home</a></li>
+                <li class="list-item"><a class="" href="/top/categories/india/articles">India</a></li>
+                <li class="list-item"><a class="" href="/top/categories/world/articles">World</a></li>
+                <li class="list-item"><a class="" href="/categories/technology/articles">Technology</a></li>
+                <li class="list-item"><a class="" href="/categories/health/articles">Health</a></li>
+                <li class="list-item"><a class="" href="/categories/business/articles">Business</a></li>
+                <li class="list-item"><a class="" href="/top/categories/politics/articles">Politics</a></li>
+                <li class="list-item"><a class="" href="/categories/sports/articles">Sports</a></li>
+                <li class="list-item"><a class="" href="/categories/science/articles">Science</a></li>
+                <li class="list-item"><a class="" href="/categories/entertainment/articles">Entertainment</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="full"></div>
+    <!-- Header End ------------------------------------------------------>

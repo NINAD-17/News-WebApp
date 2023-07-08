@@ -1,0 +1,32 @@
+<% if(hNo == 1) { %>
+    <%- include("partials/header1") -%>
+<% } else { %>
+    <%- include("partials/header2") -%>
+<% } %>
+
+<main class="main-news-section container">
+    <section class="category-news">
+        <h2 class="category-news-name"><%= newsSecTitle %></h2>
+        <div class="category-news-blocks">
+            <% articles.forEach((article, i) => { %>
+                <div class="news-block">
+                    <% if (article.urlToImage == undefined || article.urlToImage == '') { %>
+                    <%     article.urlToImage = '/images/ext.jpeg' } %>
+                    <img src="<%= article.urlToImage %>" alt="<%=  %>">
+                    <div class="content">
+                        <!-- <h2 class="newsTitle"><a href="/articles/<%= article.title %>"><%= article.title %></a></h2> -->
+                        <!-- <h2 class="newsTitle"><a href="/<%= newsSecTitle %>/articles/<%= i %>"><%= article.title %></a></h2> -->
+                        <h2 class="newsTitle"><a href="/search/articles/<%= newsSecTitle %>/<%= i %>"><%= article.title %></a></h2>
+                        <% if (article.source.name === undefined || article.source.name === '') { %>
+                            <% article.source.name = "unknown"; }%>
+                        <p class="news-provider"><%= article.source.name %></p>
+                        <p class="cat-news-description"><%= article.description %></p>
+                    </div>
+                    <br>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+</main>
+
+<%- include("partials/footer") -%>
