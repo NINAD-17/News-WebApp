@@ -1,4 +1,4 @@
-# News-WebApp
+# News WebApp
 
 This is a news web application that provides the latest news to its users with a good user interface for reading. Users can read and search for news, as well as create an account to personalize their experience. The application is built using Express.js, MongoDB, and EJS. 
 
