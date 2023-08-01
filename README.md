@@ -29,7 +29,7 @@ Screenshots include 1) Homepage 2) Search Bar 3) Reading page 4) Section page
  
 ## Installation and Setup
 
-1. Clone this repository using the URL from the code button: 'https://github.com/NINAD-17/News-WebApp.git'
+1. Clone this repository using the URL from the code button: `https://github.com/NINAD-17/News-WebApp.git`
 
 2. Navigate to the local repository of this project and install all dependencies using the command `npm i`.
 
